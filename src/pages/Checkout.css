@@ -1,0 +1,271 @@
+/* ============================================
+   CHECKOUT PAGE STYLES
+   ============================================ */
+
+.checkout-page {
+  background-color: #fff;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.checkout-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 80px 15px;
+}
+
+/* Breadcrumb */
+.checkout-breadcrumb {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 80px;
+}
+
+.checkout-breadcrumb span {
+  color: #000;
+  font-weight: 500;
+}
+
+.checkout-title {
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  margin-bottom: 48px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Layout Grid */
+.checkout-grid {
+  display: flex;
+  gap: 140px;
+  align-items: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .checkout-grid {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+/* Billing Form */
+.billing-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #888;
+}
+
+.form-group label span {
+  color: #DB4444;
+}
+
+.form-group input {
+  background-color: #F5F5F5;
+  border: none;
+  border-radius: 4px;
+  padding: 13px 16px;
+  font-size: 16px;
+  outline: none;
+  color: #000;
+}
+
+.save-info-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.save-info-checkbox input {
+  width: 24px;
+  height: 24px;
+  accent-color: #DB4444;
+}
+
+.save-info-checkbox label {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Order Summary */
+.checkout-summary {
+  width: 427px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (max-width: 1024px) {
+  .checkout-summary {
+    width: 100%;
+  }
+}
+
+.summary-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.item-info img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.item-name {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.item-price {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Totals */
+.summary-totals {
+  border-bottom: 1px solid #0000004D;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.total-row.border-top {
+  border-top: 1px solid #0000004D;
+  padding-top: 16px;
+}
+
+.total-final {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Payment Methods */
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.payment-option-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.radio-label input {
+  width: 24px;
+  height: 24px;
+  accent-color: #000;
+}
+
+.payment-logos {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Coupon Section */
+.coupon-section {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.coupon-input-wrapper {
+  flex: 1;
+}
+
+.coupon-section input {
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 13px 16px;
+  font-size: 16px;
+  outline: none;
+}
+
+.apply-coupon-btn {
+  background-color: #DB4444;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 48px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.apply-coupon-btn:hover:not(:disabled) {
+  background-color: #E07575;
+}
+
+.apply-coupon-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Place Order Btn */
+.place-order-btn {
+  background-color: #DB4444;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 48px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.3s;
+}
+
+.place-order-btn:hover {
+  background-color: #E07575;
+}
+
+.place-order-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
