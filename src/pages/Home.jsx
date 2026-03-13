@@ -33,6 +33,8 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+// test
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = ({onAddToCart}) => {
